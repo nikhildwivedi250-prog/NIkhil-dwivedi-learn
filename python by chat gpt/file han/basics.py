@@ -1,11 +1,6 @@
-file = open("notes.txt", "W")
+name = input("Enter your name :- ")
 
-file.write("hello, python I am nikhil dwivedi")
+with open("name.txt", "w") as file:
+    file.write(name)
 
-file = open("notes.txt", "r")
-
-data = file.read()
-
-print(data)
-
-file.close()
+print("Name saved successfully")
